@@ -1,0 +1,13 @@
+#level-container {
+  max-height: 30px;
+  margin: 20px auto;
+}
+
+#level {
+  max-width: 250px;
+  height: 30px;
+  background-color: red;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

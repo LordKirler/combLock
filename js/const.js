@@ -1,0 +1,1 @@
+const COL = 5;

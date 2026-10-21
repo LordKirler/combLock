@@ -2,7 +2,7 @@ const redgreen = document.getElementById("level");
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-const code = getRandomInt(1, 99999);
+const code = getRandomInt(1, 999);
 
 function mult(x) {
   let ret = 1;

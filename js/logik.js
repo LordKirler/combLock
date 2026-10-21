@@ -12,10 +12,10 @@ function mult(x) {
   return ret;
 }
 
-let code = getRandomInt(1, 999),
+let code = getRandomInt(1, 99),
   mycode = mult(code);
 while (mycode === 0) {
-  code = getRandomInt(1, 999);
+  code = getRandomInt(1, 99);
   mycode = mult(code);
 }
 

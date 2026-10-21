@@ -1,1 +1,1 @@
-const COL = 3;
+const COL = 2;

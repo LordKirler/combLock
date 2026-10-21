@@ -12,8 +12,8 @@ function mult(x) {
   return ret;
 }
 
-let mycode = mult(code),
-  code = getRandomInt(1, 999);
+let code = getRandomInt(1, 999),
+  mycode = mult(code);
 while (mycode === 0) {
   code = getRandomInt(1, 999);
   mycode = mult(code);

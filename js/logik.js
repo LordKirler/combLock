@@ -2,7 +2,6 @@ const redgreen = document.getElementById("level");
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-const code = getRandomInt(1, 999);
 
 function mult(x) {
   let ret = 1;
@@ -13,7 +12,12 @@ function mult(x) {
   return ret;
 }
 
-const mycode = mult(code);
+let mycode = mult(code),
+  code = getRandomInt(1, 999);
+while (mycode === 0) {
+  code = getRandomInt(1, 999);
+  mycode = mult(code);
+}
 
 function changeColor(nowAnswer) {
   let nowMult = mult(nowAnswer);
